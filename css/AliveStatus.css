@@ -118,28 +118,53 @@ tr.bluezone-blink {
   z-index: 2;
 }
 body {
-  background: transparent;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  background:transparent;
+font-family: Arial;
 }
-.table-container {
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: transform 0.8s ease-in-out;
+
+.leaderboard{
+width:320px;
+margin:auto;
+border-radius:6px;
+overflow:hidden;
 }
-.slide-in {
-  transform: translateX(0);
+
+.header{
+display:grid;
+grid-template-columns:40px 90px 40px 50px 50px 60px;
+background:#3a1c7a;
+color:white;
+font-weight:bold;
+padding:8px;
+font-size:14px;
 }
-.slide-out {
-  transform: translateX(100%);
+
+.row{
+display:grid;
+grid-template-columns:40px 90px 40px 50px 50px 60px;
+align-items:center;
+background:white;
+border-bottom:1px solid #eee;
+padding:6px;
+font-size:14px;
 }
-#loading, #error, #nodata {
-  color: #0F172A;
-  font-family: 'Montserrat', Arial, sans-serif;
-  text-align: center;
-  margin-top: 40px;
-  font-size: 22px;
-} 
+
+.rank{
+font-weight:bold;
+color:#3a1c7a;
+}
+
+.team{
+font-weight:bold;
+}
+
+.status{
+display:flex;
+gap:3px;
+}
+
+.bar{
+width:5px;
+height:18px;
+background:#4c1d95;
+}
